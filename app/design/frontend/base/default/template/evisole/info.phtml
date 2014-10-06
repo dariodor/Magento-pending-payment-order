@@ -103,9 +103,11 @@
                     //get paypal email
                     $paypalEmail = Mage::getStoreConfig('paypal/general/business_account');
                 ?>
-                <a href="https://www.paypal.com/cgi-bin/webscr?business=<?php echo $paypalEmail ?>&cmd=_xclick&currency_code=<?php echo $imseoCurrency ?>&amount=<?php echo $gTotal ?>&item_name=description" target="_blank">Paga subito con <?php echo $this->getPaymentInfoHtml() ?></a> 
-                <?php else:?> 
-                    <?php echo $this->getPaymentInfoHtml() ?> 
+                <a href="https://www.paypal.com/cgi-bin/webscr?business=<?php echo $paypalEmail ?>&cmd=_xclick&currency_code=<?php echo $imseoCurrency ?>&amount=<?php echo $gTotal ?>&item_name=description" target="_blank">
+                    <?php echo $this->__('Paga subito con Paypal') ?> <?php echo $this->getPaymentInfoHtml() ?>
+                </a> 
+                <?php else:?>
+                    <?php echo $this->getPaymentInfoHtml() ?>
                 <?php endif; ?>
             </div>
         </div>
