@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Evisole_PendingPaypal>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Evisole_PendingPaypal>
+    </modules>
+</config>
