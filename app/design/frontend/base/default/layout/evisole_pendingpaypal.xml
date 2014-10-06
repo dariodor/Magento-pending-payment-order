@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0"> 
+    <!-- For all pages -->
+    <sales_order_view>
+        <reference name="sales.order.info">
+            <action method="setTemplate"><template>evisole/info.phtml</template></action> 
+        </reference>
+    </sales_order_view>
+</layout>

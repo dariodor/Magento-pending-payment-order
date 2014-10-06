@@ -17,4 +17,16 @@
             </order>
         </sales>
     </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <!-- evisole handle for our layout update XML -->
+                <evisole_pendingpaypal>
+                    <!-- Here we put our layout file in a new folder (evisole) to seperate the layout file from the core Magento layout files -->
+                    <file>evisole_pendingpaypal.xml</file>
+                </evisole_pendingpaypal>
+            </updates>
+        </layout>
+    </frontend>
 </config>
