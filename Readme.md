@@ -1,10 +1,16 @@
-== Pending Payment order
+# Display Pending Payment Order
 
-* Display pending orders on account dashboard
+## Features
+
+* Display pending payment orders on "my account" page
 * "Pay here" link on pending order
+
+## Next steps
+
+* Redirect from Paypal to Magento store
+* Automatic order status update, from pending payment to processing
 * Send pending order email to customer
 
-=== Comments
+## Compatibility
 
-You need to create a custom module that depends on the Sales module. This way it will be loaded after the Sales module.
-You can override the config.xml of the sales module from the config.xml of your new module. Actually you can override any config setting from any module. 
+Magento: 1.7.2 , 1.8.1
