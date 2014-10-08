@@ -18,9 +18,9 @@
         </sales>
 
         <models>
-            <pendingpaypalordercron>
+            <pendingpaypal>
                 <class>Evisole_PendingPaypal_Model</class>
-            </pendingpaypalordercron>                         
+            </pendingpaypal>                         
         </models>
     </global>
 
@@ -38,14 +38,10 @@
 
     <crontab>
         <jobs>
-            <pendingpaypalordercron>
-                <schedule>
-                    <cron_expr>*/5 * * * *</cron_expr>
-                </schedule>
-                <run>
-                    <model>evisole/observer::cancelPendingOrders</model>
-                </run>
-            </pendingpaypalordercron>
+            <pendingpaypal_cron>
+                <schedule><cron_expr>*/5 * * * *</cron_expr></schedule>
+                <run><model>pendingpaypal/observer::cancelPendingOrders</model></run>
+            </pendingpaypal_cron>
         </jobs>
     </crontab>
 

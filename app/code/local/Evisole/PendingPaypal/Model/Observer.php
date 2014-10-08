@@ -25,25 +25,23 @@ class Evisole_PendingPaypal_Model_Observer
  
  
               if(!$orderModel->canCancel())
-				continue;
+                continue;*/
  
-              $orderModel->cancel();
+              /*$orderModel->cancel();
               $orderModel->setStatus('canceled_pendings');
-              $orderModel->save();
- 
-            }*/
-
- 
-            Mage::log("WORKS!");
- 
+              $orderModel->save();*/
+              //Mage::log(var_dump($orderModel));
+ Mage::log("WORKS!");
+            }
+ Mage::log("WORKS!");
 	}
  
 }
 
-/* SEND EMAIL
-http://www.atwix.com/magento/emails-for-custom-events/
+/*SEND EMAIL
+http://www.atwix.com/magento/emails-for-custom-events/*/
 
-class Namespace_Custmail_Model_Observer
+/*class Namespace_Custmail_Model_Observer
 {
     public function invoicedStatusChange($event)
     {
@@ -53,7 +51,7 @@ class Namespace_Custmail_Model_Observer
             $this->_sendStatusMail($order);
     }
  
-    private  function _sendStatusMail($order)
+    private function _sendStatusMail($order)
     {
         $emailTemplate  = Mage::getModel('core/email_template');
  
@@ -73,7 +71,7 @@ class Namespace_Custmail_Model_Observer
         $emailTemplateVariables['store_url'] = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);
         $emailTemplate->send($order->getCustomerEmail(), $order->getStoreName(), $emailTemplateVariables);
     }
-}
-*/
+}*/
+
 
 ?>
