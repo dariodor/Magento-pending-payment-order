@@ -1,4 +1,4 @@
-# Display Pending Payment Order
+# Display Pending Payment Orders
 
 ## Features
 
@@ -7,9 +7,9 @@
 
 ## Next steps
 
-* Redirect from Paypal to Magento store
-* Automatic order status update, from pending payment to processing
 * Send pending order email to customer
+* After completing the payment on PayPal, redirect to Magento store
+* After redirect to Magento store, automatic order status update, from pending payment to processing
 
 ## Compatibility
 
