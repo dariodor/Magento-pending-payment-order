@@ -31,9 +31,9 @@ class Evisole_PendingPaypal_Model_Observer
               $orderModel->setStatus('canceled_pendings');
               $orderModel->save();*/
               //Mage::log(var_dump($orderModel));
- Mage::log("WORKS!");
-            }
- Mage::log("WORKS!");
+                Mage::log("cancelPendingOrders!");
+            //}
+
 	}
  
 }
